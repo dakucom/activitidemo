@@ -7,13 +7,13 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--  配置数据源 -->
+    <!--  配置数据源  /// 代表localhost:3306 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
         <property name="username" value="root"/>
         <property name="url"
-                  value="jdbc:mysql://192.168.134.100:3306/activiti?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false&amp;serverTimezone=GMT%2B8&amp;allowPublicKeyRetrieval=true"/>
-        <property name="password" value="123456"/>
+                  value="jdbc:mysql:///activiti?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false&amp;serverTimezone=GMT%2B8&amp;allowPublicKeyRetrieval=true"/>
+        <property name="password" value="root"/>
         <property name="maxActive" value="3"/>
         <property name="maxIdle" value="1"/>
     </bean>
